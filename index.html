@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concordia Class Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="scripts.js" defer></script>
+    <style>
+        .settings-modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1001;
+            display: none;
+            padding: 20px;
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+        
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            display: none;
+        }
+
+        .settings-modal-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .column-box {
+            flex: 1 1 calc(33.333% - 10px);
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+            cursor: pointer;
+            text-align: center;
+            user-select: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .column-box.selected {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .select-buttons {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .select-buttons a {
+            margin: 0 10px;
+            color: #007bff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .select-buttons a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white p-4 text-center">
+        <h1>Concordia Class Search</h1>
+    </header>
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card p-3" id="filterContainer"></div>
+            </div>
+            <!-- Results Column -->
+            <div class="col-md-9">
+                <div id="results" class="card p-3">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5>Results</h5>
+                        <button class="btn btn-outline-secondary" id="settingsButton">
+                            <i class="fas fa-cog"></i>
+                        </button>
+                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr id="resultsHeader">
+                                <!-- Column headers will be dynamically added here -->
+                            </tr>
+                        </thead>
+                        <tbody id="resultsTableBody">
+                            <!-- Rows will be dynamically added here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="settingsModal" class="settings-modal">
+        <div class="settings-modal-content">
+            <button class="close-modal-button" style="position: absolute; top: 10px; right: 10px; font-size: 24px; background: none; border: none; cursor: pointer;">&times;</button>
+            <h6 style="width: 100%; text-align: center;">Manage Columns</h6>
+            <div class="select-buttons">
+                <a id="selectAll">Select All</a> | <a id="deselectAll">Deselect All</a>
+            </div>
+            <div id="columnsContainer" class="d-flex flex-wrap"></div>
+            <button class="btn btn-primary mt-3" id="applySettingsButton">Apply Changes</button>
+        </div>
+    </div>
+    <div id="modalOverlay" class="overlay"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

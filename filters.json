@@ -1,0 +1,318 @@
+{
+    "filters": [
+      {
+        "fieldName": "courseid",
+        "displayName": "Course ID",
+        "type": "text"
+      },
+      {
+        "fieldName": "termcode",
+        "displayName": "Term Code",
+        "type": "text"
+      },
+      {
+        "fieldName": "session",
+        "displayName": "Session",
+        "type": "text"
+      },
+      {
+        "fieldName": "subject",
+        "displayName": "Subject",
+        "type": "text"
+      },
+      {
+        "fieldName": "catalog",
+        "displayName": "Catalog Number",
+        "type": "text"
+      },
+      {
+        "fieldName": "section",
+        "displayName": "Section",
+        "type": "number"
+      },
+      {
+        "fieldName": "componentcode",
+        "displayName": "Component Code",
+        "type": "text"
+      },
+      {
+        "fieldName": "componentdescription",
+        "displayName": "Component Description",
+        "type": "dropdown",
+        "options": [
+          "All",
+          "Regular",
+          "Seminar",
+          "Lecture",
+          "Studio",
+          "Laboratory",
+          "Tutorial",
+          "Fieldwork",
+          "Practicum/Internship/Work-Term",
+          "Online",
+          "Tutorial/Lab",
+          "Workshop",
+          "Conference",
+          "Field Studies",
+          "Reading",
+          "Modular"
+        ]
+      },
+      {
+        "fieldName": "classnumber",
+        "displayName": "Class Number",
+        "type": "number"
+      },
+      {
+        "fieldName": "classassociation",
+        "displayName": "Class Association",
+        "type": "number"
+      },
+      {
+        "fieldName": "coursetitle",
+        "displayName": "Course Title",
+        "type": "text"
+      },
+      {
+        "fieldName": "topicid",
+        "displayName": "Topic ID",
+        "type": "number"
+      },
+      {
+        "fieldName": "topicdescription",
+        "displayName": "Topic Description",
+        "type": "text"
+      },
+      {
+        "fieldName": "classstatus",
+        "displayName": "Class Status",
+        "type": "text"
+      },
+      {
+        "fieldName": "locationcode",
+        "displayName": "Location Code",
+        "type": "text"
+      },
+      {
+        "fieldName": "instructionmodecode",
+        "displayName": "Instruction Mode Code",
+        "type": "text"
+      },
+      {
+        "fieldName": "instructionmodedescription",
+        "displayName": "Instruction Mode",
+        "type": "dropdown",
+        "options": [
+          "All",
+          "On-Line",
+          "Blended Learning",
+          "In Person"
+        ]
+      },
+      {
+        "fieldName": "meetingpatternnumber",
+        "displayName": "Meeting Pattern Number",
+        "type": "number"
+      },
+      {
+        "fieldName": "roomcode",
+        "displayName": "Room Code",
+        "type": "text"
+      },
+      {
+        "fieldName": "buildingcode",
+        "displayName": "Building Code",
+        "type": "text"
+      },
+      {
+        "fieldName": "room",
+        "displayName": "Room",
+        "type": "text"
+      },
+      {
+        "fieldName": "classstarttime",
+        "displayName": "Class Start Time",
+        "type": "time"
+      },
+      {
+        "fieldName": "classendtime",
+        "displayName": "Class End Time",
+        "type": "time"
+      },
+      {
+        "fieldName": "mondays",
+        "displayName": "Mondays",
+        "type": "toggle"
+      },
+      {
+        "fieldName": "tuesdays",
+        "displayName": "Tuesdays",
+        "type": "toggle"
+      },
+      {
+        "fieldName": "wednesdays",
+        "displayName": "Wednesdays",
+        "type": "toggle"
+      },
+      {
+        "fieldName": "thursdays",
+        "displayName": "Thursdays",
+        "type": "toggle"
+      },
+      {
+        "fieldName": "fridays",
+        "displayName": "Fridays",
+        "type": "toggle"
+      },
+      {
+        "fieldName": "saturdays",
+        "displayName": "Saturdays",
+        "type": "toggle"
+      },
+      {
+        "fieldName": "sundays",
+        "displayName": "Sundays",
+        "type": "toggle"
+      },
+      {
+        "fieldName": "classstartdate",
+        "displayName": "Class Start Date",
+        "type": "date"
+      },
+      {
+        "fieldName": "classenddate",
+        "displayName": "Class End Date",
+        "type": "date"
+      },
+      {
+        "fieldName": "career",
+        "displayName": "Career",
+        "type": "dropdown",
+        "options": [
+          "All",
+          "Undergraduate",
+          "Graduate",
+          "Continuing Education",
+          "Professional Development"
+        ]
+      },
+      {
+        "fieldName": "departmentcode",
+        "displayName": "Department Code",
+        "type": "text"
+      },
+      {
+        "fieldName": "departmentdescription",
+        "displayName": "Department",
+        "type": "dropdown",
+        "options": [
+          "All",
+          "Business Administration",
+          "Accountancy",
+          "Applied Human Sciences",
+          "Art Education",
+          "Art History",
+          "Biology",
+          "Building Civil & Environ Engineering",
+          "CCE Corporate Training",
+          "Centre for Engineer in Society",
+          "Chemical and Materials Engineering",
+          "Chemistry and Biochemistry",
+          "Cinema",
+          "Classics, Mod Lang&Linguistics",
+          "Communication Studies",
+          "Communications Department",
+          "Computer Institute",
+          "Computer Science & Software Engineering",
+          "Concordia Institute for Information Systems Engrg",
+          "Contemporary Dance",
+          "Creative Arts Therapies",
+          "Dean of Arts & Science(Office)",
+          "Design and Computation Arts",
+          "Economics",
+          "Education",
+          "Electrical and Computer Engineering",
+          "English",
+          "Etudes Francaises",
+          "Finance",
+          "Fine Arts",
+          "French Department",
+          "General Administration",
+          "Geography, Planning & Environmt",
+          "Health, Kinesiology, and Applied Physiology",
+          "History",
+          "Interdisciplinary Studies",
+          "Journalism",
+          "LC Diversity & Sustainability",
+          "Liberal Arts College",
+          "Management",
+          "Marketing",
+          "Mathematics and Statistics",
+          "Mechanical, Industrial and Aerospace Engineering",
+          "Music",
+          "Philosophy",
+          "Photography Department",
+          "Physics",
+          "Political Science",
+          "Psychology",
+          "Religions and Cultures",
+          "School of Community&Public Affairs",
+          "School of Graduate Studies",
+          "School of Irish Studies",
+          "Science College",
+          "Simone deBeauvoir Inst&Wom Std",
+          "Sociology and Anthropology",
+          "Student Success Centre",
+          "Studio Arts",
+          "Supply Chain And Business Technology Management",
+          "Theatre",
+          "Theological Studies"
+        ]
+      },
+      {
+        "fieldName": "facultycode",
+        "displayName": "Faculty Code",
+        "type": "text"
+      },
+      {
+        "fieldName": "facultydescription",
+        "displayName": "Faculty",
+        "type": "dropdown",
+        "options": [
+          "All",
+          "The Centre for Continuing Education",
+          "John Molson School of Business",
+          "Faculty of Fine Arts",
+          "Faculty of Arts & Science",
+          "Gina Cody School of Engineering & Computer Science",
+          "School of Graduate Studies",
+          "Student Success Centre"
+        ]
+      },
+      {
+        "fieldName": "enrollmentcapacity",
+        "displayName": "Enrollment Capacity",
+        "type": "number"
+      },
+      {
+        "fieldName": "currentenrollment",
+        "displayName": "Current Enrollment",
+        "type": "number"
+      },
+      {
+        "fieldName": "waitlistcapacity",
+        "displayName": "Waitlist Capacity",
+        "type": "number"
+      },
+      {
+        "fieldName": "currentwaitlisttotal",
+        "displayName": "Current Waitlist Total",
+        "type": "number"
+      },
+      {
+        "fieldName": "hasseatreserved",
+        "displayName": "Has Seat Reserved",
+        "type": "toggle"
+      }
+    ]
+  }  
